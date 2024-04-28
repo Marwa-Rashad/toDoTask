@@ -1,0 +1,4 @@
+<li>
+  <input type="checkbox" (click)="updateTask()" [checked]="task.checked" />
+  <span [class.checked]="task.checked">{{ task.name }}</span>
+</li>

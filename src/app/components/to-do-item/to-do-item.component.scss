@@ -1,0 +1,19 @@
+ul {
+  padding: 0px 75px;
+}
+li {
+  list-style: none;
+  /* font-size: 1.2em; */
+}
+li span {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+span.checked {
+  text-decoration: line-through;
+}
+
+button {
+  font-weight: 600;
+}

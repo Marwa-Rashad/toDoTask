@@ -1,0 +1,23 @@
+<div>
+  <h2>Todo List</h2>
+  <form #todo="ngForm" (ngSubmit)="addItem(item.value)">
+    <input
+      type="text"
+      #item
+      class="todo_text"
+      name="item"
+      ngModel
+      required
+      placeholder="Enter Items..."
+    />
+
+    <button type="submit" [disabled]="todo.invalid" class="btn-Add">Add</button>
+  </form>
+
+  <hr />
+  <ul *ngFor="let task of tasks">
+    <app-to-do-item
+      [task]="task"
+    ></app-to-do-item>
+  </ul>
+</div>
